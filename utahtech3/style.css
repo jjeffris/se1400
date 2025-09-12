@@ -3,7 +3,8 @@ body {
     background-color: #ffffff;
     color: #666666;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(to bottom, #eeeeee, #ffffff)
+    background: linear-gradient(to bottom, #eeeeee, #ffffff);
+    background-attachment: fixed;
 }
 header  {
 
