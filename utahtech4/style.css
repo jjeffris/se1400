@@ -71,6 +71,7 @@ main{
     grid-column: 2 / 8;
     padding-left: 2rem;
     padding-right: 2rem;
+    background-color: #ffffff;
 
 }
 
@@ -136,7 +137,9 @@ footer{
 #wrapper{
 
     display: grid;
-    grid-auto-rows: 0px auto;
+    /* if you're curious mr teacher man, the line of code right below is the reason I
+        couldn't get it to work. I didn't surround it with parentheses.*/
+    grid-auto-rows: (0px, auto);
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 
 }
