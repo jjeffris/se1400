@@ -14,7 +14,8 @@ body {
 header  {
 
     grid-row: 1 / 2;      /* occupy the first row */
-    grid-column: 2 / 8;  /* span from column 2 to the second-to-last column */
+    grid-column: 2 / -2;
+
     background-color: #003058;
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -22,7 +23,6 @@ header  {
 }
 header h1{
 
-    line-height: 140%;
     padding: .5rem;
     background-image: url("utahtechimages/utahtechlogo.svg");
     background-repeat: no-repeat;
@@ -41,7 +41,7 @@ nav{
     font-weight: bold;
     background-color: #424242;
     grid-row: 2 / 3;
-    grid-column: 2 / 8;
+    grid-column: 2 / -2;
     position: sticky;
     top: 0;
 
@@ -68,7 +68,7 @@ nav a:hover{
 }
 main{
     grid-row: 4 / 5;
-    grid-column: 2 / 8;
+    grid-column: 2 / -2;
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: #ffffff;
@@ -82,8 +82,8 @@ main img{
 
 #homehero{
     grid-row: 3 / 4;
-    grid-column: 2 / 8;
-    height: 300px;
+    grid-column: 2 / -2;
+    min-height: 300px;
     background-image: url("utahtechimages/homehero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,8 +92,8 @@ main img{
 }
 #studenthero{
     grid-row: 3 / 4;
-    grid-column: 2 / 8;
-    height: 300px;
+    grid-column: 2 / -2;
+    min-height: 300px;
     background-image: url("utahtechimages/studenthero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -102,8 +102,8 @@ main img{
 }
 #facultyhero{
     grid-row: 3 / 4;
-    grid-column: 2 / 8;
-    height: 300px;
+    grid-column: 2 / -2;
+    min-height: 300px;
     background-image: url("utahtechimages/facultyhero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -127,7 +127,7 @@ dt{
 }
 footer{
     grid-row: 5 / 6;
-    grid-column: 2 / 8;
+    grid-column: 2 / -2;
     font-size: .70rem;
     font-style: italic;
     text-align: center;
@@ -139,7 +139,7 @@ footer{
     display: grid;
     /* if you're curious mr teacher man, the line of code right below is the reason I
         couldn't get it to work. I didn't surround it with parentheses.*/
-    grid-auto-rows: (0px, auto);
+    grid-auto-rows: auto;
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 
 }
