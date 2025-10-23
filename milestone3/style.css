@@ -32,7 +32,7 @@ header {
 
 
 main {
-  grid-column: 2 / 8;
+  grid-column: 3 / 7;
   background-color: rgba(0, 0, 255, 0.3);
   height: 300px;
 }
