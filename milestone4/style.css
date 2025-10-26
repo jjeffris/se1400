@@ -4,6 +4,19 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: 'IslandMoments';
+  src: url(IslandMoments.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url(Inter/Inter-VariableFont_opsz,wght.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .grid-container{
   display: grid;
   grid-auto-rows: auto;
@@ -12,12 +25,12 @@
 }
 
 nav{
-  grid-column: 2 / 8;
+  grid-column: 3 / 7;
   grid-row: 2/2;
-  background-color: rgba(0, 90, 128, 0.559);
-  height: 50px;
+  z-index: 1;
+  background-color: rgba(0, 255, 204, 0);
+  height: 75px;
   text-align: center;
-  position: sticky;
   font-weight: bold;
   top: 0;
 }
@@ -26,30 +39,40 @@ nav ul{
   padding: 0px;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
+  height: 100%;
 }
 nav li{
   width: 100%;
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   padding: 1rem 0rem;
   display: block;
   text-align: center;
+  font-size: x-large;
+  font-family: 'Inter';
 }
 
 header {
   grid-column: 2 / 8; 
-  background-color: rgb(0, 255, 204);
+  grid-row: 2/2;
+  z-index: 1;
+  background-color: rgba(0, 255, 204, 0.40);
   text-align: center;
   height: 75px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 20px;
+  font-family: 'Inter';
 }
-header img{
-  max-height: 75px;
+header h1{
+  font-family: 'IslandMoments';
+  font-size: 56px;
 }
+
 #fishpic{
   grid-column: 2/8;
   grid-row: 2/2;
@@ -76,19 +99,24 @@ main {
   gap: 10px;
 }
 figure img{
-  width: 100%;
+  width: 75%;
   max-height: 300px;
+  margin-top: 50px;
 }
 
 figcaption {
   margin-top: 8px;
   font-size: 1rem;
-  color: #333;
+  color: #000000;
   font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #aaaaaa;
 }
 
 footer {
   grid-column: 2 / 8;
+  grid-row: 7/8;
   background-color: rgb(0, 255, 204);
   text-align: center;
   font-size: .70rem;
